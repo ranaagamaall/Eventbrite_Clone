@@ -1,0 +1,549 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+.info{
+    min-width: 50%;
+    background-color: #ffffff;
+    padding-top: 5rem;
+}
+
+
+.info .form{
+    width: 100%;
+    width: 38rem;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+}
+
+.info .form .logoContainer{
+    width: 8rem;
+
+    padding-left: 10px;
+    -webkit-animation: jello-diagonal-2 0.8s both;
+	        animation: jello-diagonal-2 0.8s both;
+}
+
+.info .form .logoContainer img{
+    width: 100%;
+}
+.passwordp{
+    color:var(--faded-grey);
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-left: 10px;
+    margin-bottom: 3rem;
+}
+.validpasswordp{
+    border-top:4px solid rgb(236, 235, 235) ;
+    font-size: 1.1rem;
+    width: 95%;
+    margin:  2rem auto;
+    color:var(--moretext);
+    font-weight: 600;
+    
+
+}
+.info .form h1{
+    font-size: 4.5rem;
+    line-height: 1.2;
+    margin-right: -1px;
+    font-weight: 900;
+    padding-left: 10px;
+    color: var( --content-text);
+
+    font-family: var(--main-h1);
+}
+
+.fieldContainer{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 7px 9px 7px;
+    border: solid 1px #ccc;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    border-radius: 1.5px;
+}
+
+.fieldContainer:hover{
+    border: solid 1.5px #a9a8a8;
+    border-top: solid 2px #a9a8a8;
+    
+}
+
+.fieldContainer .label{
+    font-size: 1.6rem;
+    color: var(--secondary-text);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 0.2rem;
+    position: relative;
+    top: 10px;
+    display: block;
+    transition: 0.2s;
+    z-index: 1;
+
+    padding-left: 0.4rem;
+}
+
+.field::placeholder {
+    color: transparent;
+}
+
+.fieldContainer .field{
+    display: block;
+    border: none;
+    outline: 0;
+    font-size: 1.4rem;
+    color: var( --primary-tex);
+    background-color: transparent;
+    z-index: 2;
+
+    padding-left: 0.4rem;
+}
+
+
+.fieldContainer:has(.field:focus) {
+    border: solid 2px var( --bright-blue);
+    border-left: solid 3.5px var( --bright-blue);
+    transition: 1ms;
+}
+
+.fieldContainer:has(.field:not(:placeholder-shown)) .label{
+    top: 0;
+    font-size: 1.2rem;
+}
+
+.fieldContainer:has(.field:focus) .label{
+    color: var( --bright-blue);
+    top: 0;
+    font-size: 1.2rem;
+}
+
+.boxContainer:has(span) .fieldContainer{
+    border: solid 1px #db6d7c;
+    border-bottom: solid 2px #db6d7c;
+    transition: 1ms;
+}
+
+.boxContainer:has(span) .fieldContainer .label{
+    color: var(--errorText);
+    top: 0px;
+    font-size: 1.2rem;
+}
+
+.boxContainer span{
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    color: var(--errorText);
+}
+
+.btn{
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+}
+.btn .button{
+    width: 100%;
+    background-color: var(--orange);
+    color: white;
+    font-size: 1.4rem;
+    padding: 1.7rem 0;
+    border: none;
+    font-weight: 600;
+    border-radius: 3px;
+    margin-top: 1.8rem;
+
+}
+.btn .button p{
+    text-align: center;
+}
+.btn .button:hover{
+    background-color: var(--hoverButton);
+    cursor: pointer;
+}
+
+.image{
+    width: 50%;
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+
+    padding: 0 1px;
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+   
+
+}
+
+
+/* sign up name half fields */
+.name .boxContainer{
+    width: 48%;
+    
+  
+}
+
+.name .boxContainer .fieldContainer{
+    padding: 7px 7px 12px;
+    height: 3rem;
+
+}
+
+.linearLine{
+    background-color: rgb(238,237,242);
+    min-width: 50px;
+    width: 95%;
+    margin: 2rem auto;
+    height: 0.45rem;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.mssg{
+    position: relative;
+    width: 95%;
+    margin: 2rem 1rem;
+    color: var(--secondary-text);
+    font-size: 1.2rem;
+}
+
+.wideScreenlink{
+    margin-left: 1rem;
+    color: var(--bright-blue);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.wideScneenlink:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.screenLink{
+    margin-left: 1rem;
+    color: var(--bright-blue);
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-top: 1rem;
+}
+.screenLink:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.smallScreenlink{
+    display: none;
+}
+
+.loader{
+    margin: auto;
+    justify-content: center;
+}
+
+
+.splitfield
+{
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.splittext{
+    border: 1px solid #a9a8b3;
+    border-radius: 100px;
+    background: #fff;
+    position: relative;
+    display: inline-block;
+    padding: 3px 14px 3px;
+    min-width: 20px;
+    text-align: center;
+    color: var(--secondary-text);
+    font-size: 1.4rem;
+    font-family:var(--main-h1);
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+}
+.hr_split
+{
+    width:95%;
+    height:0.1px;
+    color:white;
+    position: absolute;
+    left: 1rem;
+    justify-content: center;
+    background-color: rgb(169,168,179);
+    margin: 2rem 0;
+}
+.btn1 {
+    width: 95%;
+    text-align: center;
+    margin: 0.1rem auto;
+    
+}
+.btn1 button{
+    width: 100%;
+    background-color: white;
+    color: rgb(57,54,79);
+    font-size: 1.5rem;
+    border: 1px solid #dbdae3;
+    font-weight: 600;
+    border-radius: 3px;
+    height: 44px;
+    font-family: var(--main-h1);
+    letter-spacing: 0.5px;
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.btn1 button p{
+    padding-top: 1rem;
+    
+}
+
+.btn1 button:hover{
+    background-color: rgb(249,249,251);
+    cursor: pointer;
+    transition: 2ms;
+}
+.formhide
+{
+ 
+    display:none;
+}
+.formshow::after{
+    display:unset;
+}
+
+.icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+}
+.modalicon{
+    width:4rem;
+    height:4rem;
+    margin: auto;
+    align-items: center;
+    color:var( --content-text)
+}
+.methods{
+    width: 95%;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom:4rem;
+}
+
+.methods h3{
+    font-size: 1.4rem;
+    color: rgb(57,54,79);
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: rgb(103,100,119);
+    font-family: var(--main-h1);
+
+    width: fit-content;
+}
+
+.methods ul{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    padding-top: 2rem;
+    width: fit-content;
+}
+
+.methods li{
+    width: 4.7rem;
+    height: 4.7rem;
+    border-radius: 50%;
+}
+
+.methods li div{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+.methodsIcon{
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.downArrow{
+    padding-left: 2.2rem;
+    color: rgb(44, 43, 51);
+    display: none;
+}
+
+.forgetPassContainer{
+    align-items: center;
+}
+
+@media screen and (max-width:960px) {
+    .main{
+        align-items: center;
+    }
+    .image{
+        display: none;
+    }
+
+    .info{
+        width: 100%;
+        padding-top: 8rem;
+    }
+    
+    .info .form{
+        width: 40rem;
+    }
+
+    .methods h3{
+        margin: auto;
+        cursor: pointer;
+        border-bottom:0.1px solid #a9a8a848;
+        padding:0.5rem 1rem;
+    }
+
+    .methods .downArrow{
+        display: initial;
+    }
+    .methods ul{
+        margin: auto;
+        display: none;
+        opacity: 0;
+    }
+
+    .methods .showDropDown{
+        display: flex;
+        opacity: 1;
+        transition: opacity 0.7s;
+
+        justify-content: center;
+    }
+
+    .wideScreenlink{
+       display: none;    
+    }
+    .smallScreenlink{
+        display: initial;
+        margin-left: 1rem;
+        color: var(--bright-blue);
+        font-size: 1.4rem;
+        font-weight: 600;
+
+        padding-top: 30%;
+    }
+    
+    .smallScreenlink:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 97%;
+    }
+    .forgetPassHeader{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-3-4 8:35:57
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation jello-diagonal-2
+ * ----------------------------------------
+ */
+ @-webkit-keyframes jello-diagonal-2 {
+    0% {
+      -webkit-transform: skew(0deg 0deg);
+              transform: skew(0deg 0deg);
+    }
+    30% {
+      -webkit-transform: skew(-25deg -25deg);
+              transform: skew(-25deg -25deg);
+    }
+    40% {
+      -webkit-transform: skew(15deg, 15deg);
+              transform: skew(15deg, 15deg);
+    }
+    50% {
+      -webkit-transform: skew(-15deg, -15deg);
+              transform: skew(-15deg, -15deg);
+    }
+    65% {
+      -webkit-transform: skew(5deg, 5deg);
+              transform: skew(5deg, 5deg);
+    }
+    75% {
+      -webkit-transform: skew(-5deg, -5deg);
+              transform: skew(-5deg, -5deg);
+    }
+    100% {
+      -webkit-transform: skew(0deg 0deg);
+              transform: skew(0deg 0deg);
+    }
+  }
+  @keyframes jello-diagonal-2 {
+    0% {
+      -webkit-transform: skew(0deg 0deg);
+              transform: skew(0deg 0deg);
+    }
+    30% {
+      -webkit-transform: skew(-25deg -25deg);
+              transform: skew(-25deg -25deg);
+    }
+    40% {
+      -webkit-transform: skew(15deg, 15deg);
+              transform: skew(15deg, 15deg);
+    }
+    50% {
+      -webkit-transform: skew(-15deg, -15deg);
+              transform: skew(-15deg, -15deg);
+    }
+    65% {
+      -webkit-transform: skew(5deg, 5deg);
+              transform: skew(5deg, 5deg);
+    }
+    75% {
+      -webkit-transform: skew(-5deg, -5deg);
+              transform: skew(-5deg, -5deg);
+    }
+    100% {
+      -webkit-transform: skew(0deg 0deg);
+              transform: skew(0deg 0deg);
+    }
+  }
+  

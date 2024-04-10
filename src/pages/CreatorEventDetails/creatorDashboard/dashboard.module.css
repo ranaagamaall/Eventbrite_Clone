@@ -1,0 +1,213 @@
+.container {
+  width: 100%;
+}
+
+.dashboard {
+  padding: 0 8rem;
+}
+
+.header {
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: var(--content-text);
+  margin: 2.8rem 0 1.4rem 1.2rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: calc((2 / 3) * 100%) calc((1 / 3) * 100%);
+}
+
+.cards {
+  display: flex;
+  min-height: 17rem;
+}
+
+.recommended {
+  margin: 1.4rem 0 1.4rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.secsectionheader {
+  color: var(--primary-text);
+  font-size: 1.8rem;
+  letter-spacing: 0.05rem;
+  font-weight: 600;
+}
+
+.reclistContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.recitemContainer {
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.iconContainer svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: var(--secondary-text);
+}
+
+.reclistdata {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8rem;
+}
+
+.reclistdtitle {
+  color: var(--primary-text);
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+}
+
+.hyperlink {
+  color: var(--bright-blue);
+  font-size: 1.3rem;
+  letter-spacing: 0.05rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hyperlink:hover {
+  text-decoration: underline;
+}
+
+.mainsectionheader {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--content-text);
+  margin: 1.4rem 0 1.4rem 1.2rem;
+}
+
+.eventurl {
+  color: var(--primary-text);
+  font-size: 1.3rem;
+  letter-spacing: 0.05rem;
+  font-weight: 600;
+  margin: 1.4rem 0 1.4rem 1.2rem;
+}
+
+.eventurlheader {
+  margin-top: 0.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.url {
+  /* display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; */
+  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  width: 50%;
+}
+
+.shareicons {
+  margin: 1.4rem 0 1.4rem 1.2rem;
+}
+
+.thirsectionheader {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+  font-weight: 600;
+  color: var(--primary-text);
+  font-family: var(--main-h1);
+}
+
+.shareicons ul {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2.5rem;
+  row-gap: 1rem;
+  width: 100%;
+}
+.shareicons li {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 90%;
+  cursor: pointer;
+}
+.shareicons li:hover {
+  background-color: var(--border-color);
+  transition: 1s;
+}
+
+.shareIcon {
+  width: 100%;
+  height: 100%;
+  color: var(--icons);
+}
+
+hr {
+  width: 100%;
+  border-top: 1px solid #eeedf2;
+  /* margin: 3rem 0 !important; */
+}
+
+.acticonContainer svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: var(--bright-blue);
+}
+
+.salescards {
+  display: flex;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin: 2.8rem 0 2.8rem 1.2rem;
+  flex-wrap: wrap;
+}
+
+.urlcontainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.urlcopy:hover
+{
+  cursor: pointer;
+  
+}
+
+
+.urlcopy svg
+{
+  width: 20px;
+  height: 20px;
+  fill: var(--bright-blue);
+}
+
+@media screen and (max-width: 1400px) {
+  .dashboard {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 659px) {
+  .content {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cards {
+    overflow-x: scroll;
+  }
+}

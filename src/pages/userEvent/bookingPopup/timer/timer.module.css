@@ -1,0 +1,6 @@
+.numbers{
+    color: var(--secondary-text);
+    font-family: var(--main-h1);
+    margin-block: 1rem;
+    font-size: 1.2rem;
+}

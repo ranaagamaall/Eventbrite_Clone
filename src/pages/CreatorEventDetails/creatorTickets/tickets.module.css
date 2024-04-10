@@ -1,0 +1,248 @@
+.whole{
+    display: flex;
+    width: 100%;
+}
+
+.container{
+    background-color: #fff;
+    max-width: 960px;
+    margin-top:5rem;
+    margin:  9rem;
+    width: 100%;
+}
+.namep{
+    padding-left:8px;
+    padding-top: 1rem;
+    font-size: 1.3rem;
+   
+    color:#39364f;
+}
+.ticketp{
+color:#1e0a3c;
+font-size: 3rem;
+letter-spacing: .5px;
+font-weight: 700;
+margin-bottom: 4.5rem;
+
+}
+.btn{
+ 
+    justify-content: center;
+    display: flex;
+}
+.btn .button{
+
+    min-width:15%;
+    background-color: var(--orange);
+    color: white;
+    font-size: 1.3rem;
+    border: none;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-top: 2rem;
+    margin-left: auto;
+    height: 4.5rem;
+    padding: 0 30px 1px;
+    text-align: center;
+}
+.btn .button p{
+  
+    text-align: center;
+}
+.btn .button:hover{
+    background-color: var(--hoverButton);
+    cursor: pointer;
+}
+
+.headercontainer p{
+font-size:1.8rem;
+
+font-weight: 600;
+color:#39364f;
+
+
+}
+.headercontainer a{
+    font-size:1.5rem;
+    color:#3659e3;
+    height: 15px;
+    cursor:pointer;
+}
+.headercontainer a:hover{
+  border-bottom: 1px solid #3659e3;
+}
+.headercontainer{
+    margin: auto;
+    display:flex;
+    padding-top:2rem;
+    padding-left:2rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    max-height: 20px;
+    justify-content:space-between;
+    border-bottom:1px solid rgb(235, 233, 233);
+}
+.forminfo{
+    margin-top: 3rem;
+    width: 90%;
+}
+.typeofform{
+    padding-left: 2.1rem;
+    
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    gap:1.6rem;
+}
+.typeofform .item{
+    font-size: 1.3rem;
+   
+    border:1px solid #dbdae3;
+    border-radius: 5px;
+    padding: 4.5% 10.5%;
+    cursor: pointer;
+    text-align: center;
+   
+
+}
+.clickeditem{
+    font-size: 1.3rem;
+    padding: 4.5% 10.5%;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgba(54,89,227,.1);
+    border: 1px solid #3659e3;
+    color: #3659e3
+}
+.boxContainer{
+    width: 90%;
+    margin: auto;
+    
+}
+
+.fieldContainer{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 7px 9px 7px;
+    padding-left: 18px;
+    border: solid 1px #ccc;
+    margin-top: 2.5rem;
+    margin-left:5px;
+    
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    border-radius: 1.5px;
+
+}
+
+.fieldContainer:hover{
+    border: solid 1.5px #a9a8a8;
+  
+    
+}
+
+.fieldContainer .label{
+    font-size: 1.6rem;
+    color: var(--secondary-text);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 0.2rem;
+    position: relative;
+    top: 10px;
+    display: block;
+    transition: 0.2s;
+    z-index: 1;
+
+    
+}
+
+.field::placeholder {
+    color: transparent;
+}
+
+.fieldContainer .field{
+  
+    border: none;
+    outline: 0;
+    font-size: 1.4rem;
+    color: var( --primary-tex);
+    background-color: transparent;
+    z-index: 2;
+
+    
+
+}
+
+
+.fieldContainer:has(.field:focus) {
+    border: solid 2px var( --bright-blue);
+    border-left: solid 3.5px var( --bright-blue);
+    transition: 1ms;
+}
+
+.fieldContainer::placeholder{
+ color:black;
+}
+
+.fieldContainer:has(.field) .label{
+    top: 0;
+    font-size: 1.2rem;
+}
+.dollar{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-right: 100px;
+  position: relative;
+ 
+  bottom:8px;
+  padding-right: 8px;
+  color:#a9a8b3;
+  
+  
+  
+}
+.container2{
+    width: 100%;
+    display: flex;
+    gap:0px;
+    flex-direction:row;
+}
+.container2 .field{
+   width: 90%;
+   
+   position: relative;
+   right: 95px;
+}
+.containerstart{
+    width:88%;
+    margin: auto;
+    padding-left:5px;
+    display: flex;
+    gap:10px;
+
+}
+.containerstart .boxContainer
+{
+    width:50%;
+}
+.containerstart .datacontainer{
+    width:50%;
+    height:100%;
+   font-size: 2rem;
+   padding-top: 20px;
+
+ 
+}
+.class{
+    background-color: red;
+    height: 200px;
+    padding: 100px;
+    display: flex;
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        margin: 9rem 2rem ;
+    }
+    }

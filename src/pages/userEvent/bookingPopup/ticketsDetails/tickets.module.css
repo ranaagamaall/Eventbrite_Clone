@@ -1,0 +1,262 @@
+.ticketscontainer{
+  height: 100%;
+}
+.bookingheader {
+  width: 100%;
+  min-height: 8rem;
+  text-align: center;
+  border-bottom: 2px solid rgb(238, 237, 242);
+  /* padding-bottom: 1.2rem; */
+ 
+}
+
+.bookingheader div {
+  padding-top: 1.2rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.eventdate {
+  font-size: 1.2rem !important;
+  margin-top: .8rem;
+  color:#6f7287
+}
+
+.tickets {
+  margin: auto;
+  /* max-height:  56rem; */
+  max-height: calc(100% - 17rem);
+  overflow-y: scroll;
+  border-bottom: 2px solid rgb(238, 237, 242);
+
+}
+.containerticketinfo{
+  padding-left: 1.6rem;
+  padding-top:1.6rem ;
+}
+
+.promocode{
+  margin: 1.6rem auto;
+  width: 79%;
+}
+
+.promocodebox
+{
+  width: 100%;
+}
+
+.promocodebox:focus
+{
+  border: black !important;
+}
+
+
+.applybtn
+{
+  border: 0;
+  background: none;
+  cursor: default;
+
+}
+
+.applybtnactive
+{
+  border: 0;
+  background: none;
+  cursor: pointer;
+  color: rgb(61,100,255);
+}
+
+.singleticket{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  background: rgb(255, 255, 255);
+  border: 2px solid rgb(238, 237, 242);
+  border-radius: 8px;
+  padding: 1.6rem 0;
+  margin: 1.6rem auto;
+  width: 79%;
+ 
+}
+
+.singleticketnamecontainer {
+  display: flex;
+  border-bottom: 2px solid rgb(238, 237, 242);
+  padding: 0 1.6rem 1.6rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.singleticketname{
+  font-size: 1.6rem;
+  font-weight: 600;
+  color:#39364f;
+}
+.addremoveactive:focus ~ .addremoveticket {
+  border: 2px solid blue !important;
+}
+
+.addremoveticket {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+ 
+}
+
+.addremove {
+  cursor: default;
+  background-color: rgb(238,237,242);
+  font-size: 4rem;
+  border-radius: 8px;
+  max-height: 30px;
+  padding: .5rem;
+}
+
+.addremoveactive {
+  background-color: #3d64ff;
+
+  cursor: pointer;
+  font-size: 4rem;
+  border-radius: 8px;
+  max-height: 30px;
+  padding: .5rem;
+}
+
+.addremoveactive svg{
+    width: 2rem;
+    fill:white !important;
+}
+
+.addremove svg{
+    width: 2rem;
+    fill: var(--faded-grey);
+}
+
+.ticketamount {
+  margin: 0 1.5rem;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+.headercontainer{
+  margin-bottom: 2rem;
+}
+.price{
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+  color:#39364f;
+}
+del{text-decoration: line-through;}
+
+.sales{
+  font-size: 1.4rem;
+}
+.includedpr{
+  margin-bottom: 1rem;
+  color:#6f7287;
+  font-size: 1.3rem;
+
+}
+.Detailsabout{
+  margin-bottom: 1rem;
+  font-size:1.3rem;
+  color:#6f7287
+}
+
+.ticketsfooter {
+  padding: 1.6rem 0;
+  margin: 1.6rem auto;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  width: 79%;
+  color: #6f7287;
+}
+
+.ticketsfooter div{
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1rem;
+  text-align: center;
+}
+
+.logo
+{
+  width: 4rem;
+  filter: grayscale(100%);
+}
+
+.checkoutcontainer{
+  width: 100%;
+  min-height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+.summarycontainer {
+  margin: 0 auto;
+  width: 77.5%;
+  justify-content: flex-end;
+}
+
+.btn {
+  /* width: 25%; */
+  /* margin: auto; */
+  justify-content: flex-end;
+  align-items: center;
+  /* background-color: black; */
+  display: flex;
+  /* position: relative; */
+  margin:0 auto;
+  width: 77.5%;
+}
+.btn .button {
+  width:30%;
+  background-color: var(--orange);
+  color: white;
+  font-size: 1.4rem;
+
+  padding: 1.4rem 0;
+  border: none;
+  font-weight: 600;
+  border-radius: 3px;
+  /* margin-top: 1.8rem; */
+  /* margin:auto 1.6rem; */
+  /* position: absolute; */
+  /* left:240px; */
+  max-height: 5rem;
+  border-radius: 5px;
+}
+.btn .button p {
+  text-align: center;
+}
+.btn .button:hover {
+  background-color: var(--hoverButton);
+  cursor: pointer;
+}
+.modalicon{
+  width:4rem;
+  height:4rem;
+  margin: auto;
+  align-items: center;
+  color:var( --content-text)
+ 
+}
+.errm{
+  margin-bottom:2rem;
+}
+
+.upArrow{
+  transform: rotate(180deg);
+}
+
+@media screen and (min-width: 791px) {
+  .summarycontainer {
+    display: none;
+  }
+
+}

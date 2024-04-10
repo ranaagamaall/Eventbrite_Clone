@@ -1,0 +1,44 @@
+.Filter ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 90%;
+  margin-block: 2rem;
+}
+.FilterItem{ 
+  width: fit-content;
+  font-family: var(--main-h1);
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: .05rem;
+  white-space: nowrap;
+}
+.FilterItem hr{
+  display:none;
+}
+.element
+{
+  color: var(--secondary-text);
+}
+
+.FilterItem .element:hover{
+   
+  color:var(--primary-color); 
+  padding-bottom: .6rem;
+  border-bottom: 2px black solid;
+}
+
+.clicked
+{
+    padding-bottom: .7rem !important;
+    border-bottom: 2px blue solid !important;
+    color: var(--bright-blue) !important;
+}
+
+
+@media  screen and (max-width:1150px) {
+  .Filter{
+    overflow-x:scroll;
+  }
+}
+  

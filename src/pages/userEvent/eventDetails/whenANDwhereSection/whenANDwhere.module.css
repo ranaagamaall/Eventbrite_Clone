@@ -1,0 +1,67 @@
+.whenwherecontainer
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    padding: 3rem 0;
+}
+
+.whenwhereEvTitle {
+  color: var(--content-text);
+
+}
+
+.whenwhereEvTitle h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  /* line-height: 1.75rem; */
+}
+.whenwhereEvcontainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.6rem;
+}
+.whenwhereEvdescriptioncontainer {
+  display: flex;
+  column-gap: 1.6rem;
+}
+.whenwhereEvdescription {
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  flex-direction: column;
+  row-gap:1rem ;
+  color: var(--primary-text);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.datetime
+{
+    color: var(--secondary-text);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.whenwhereEVIcons {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-background);
+}
+.whenwhereEvSummary {
+  color: var(--secondary-text);
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 760px) {
+  .whenwhereEvcontainer
+  {
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 3.2rem;
+  }
+}

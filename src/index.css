@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Neue Plak";
+  /* src: url("neue_plak_black-webfont.eot"); */
+  src: url("./assets/fonts/neue_plak_black-webfont.woff") format("woff"),
+  /* url("neue_plak_black-webfont.otf") format("opentype"),
+  url("CustomFont.svg#filename") format("svg"); */
+  }
+
+:root { 
+    --primary-background: rgb(248, 247, 250);
+    --secondary-background : rgb(255, 255, 255);
+    --primary-text : rgb(57, 54, 79);
+    --secondary-text: rgb(114, 117, 150); 
+    --content-text: rgb(30, 10, 60);
+    --orange : rgb(209,65,12);
+    --bright-blue: rgb(54,89,227);
+    --footer: rgb(30, 10, 60); 
+    --hoverButton: rgb(240, 85, 55);
+    --errorText: rgb(215, 95, 112);
+    --moretext:rgb(81, 79, 101);
+    --faded-grey : rgb(169, 168, 179); 
+    --border-color:rgb(238, 237, 242);
+    --icons:rgb(75,77,99);
+    --blue-faded: rgb(235, 238, 252);
+    --test-blue: rgb(61, 100, 255);
+
+    --table: rgb(248, 247, 250);
+    
+    --main-h1: 'Vazirmatn', sans-serif;
+  }
+
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  
+}
+html {
+  font-size: 62.5%;
+
+}
+
+body {
+  margin: 0;
+  font-family: 'Fjalla One', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+.fixTop {
+  padding-top: 8rem;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media screen and (max-width: 1000px) {
+
+  html {
+    font-size: 65%;
+  }
+
+}
+@media screen and (max-width: 890px) {
+
+  html {
+    font-size: 55%;
+  }
+
+}
+@media screen and (max-width: 600px) {
+
+  html {
+    font-size: 45%;
+  }
+
+}
+@media screen and (max-width: 450px) {
+
+  html {
+    font-size: 40%;
+  }
+
+}

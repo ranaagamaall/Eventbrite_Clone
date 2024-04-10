@@ -1,0 +1,295 @@
+.container{
+    margin-top:2rem;
+
+}
+.containercontent
+{
+    padding-left:8rem;
+}
+.RegForm
+{
+    border:solid 1px var(--border-color);
+    width: 65rem;
+}
+.header
+{
+    color: var(--content-text);
+    font-size: 3rem;
+    padding-bottom: 0.8rem;
+}
+.secondarytext
+{
+    margin-top:0.8rem;
+    color: var(--primary-text);
+    font-size:1.6rem;
+    font-weight:450;
+    padding-bottom: 2rem;
+}
+.textcontainer
+{
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 2rem;
+}
+.selecttitle
+{
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+.selectbox
+{
+    width: 36rem;
+    height:4rem;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+.ticketmenutitle
+{
+    height: 1rem;
+}
+.ticketmenutitle th
+{
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 8px;
+    text-align: right;
+    background-color: var(--primary-background);
+}
+.NochargeLabel
+{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+.ticketmenutitle th:first-child
+{
+    text-align: left;
+    width:22rem;
+}
+.ticketmenutitle th:nth-child(2)
+{
+    width:13rem;
+}
+.ticketmenutitle th:nth-child(3)
+{
+    width:7rem;
+}
+.ticketmenutitle th:nth-child(4)
+{
+    width:15rem;
+    height:2rem;
+}
+.ticketmenutitle th:nth-child(5)
+{
+    width:15rem;
+}
+.tickettypetitle
+{
+    text-align: left;
+    height: 3.2rem;
+    padding: 0.8rem;
+}
+.menutitles
+{
+    text-align: right;
+    padding-left: 2rem;
+}
+.table
+{
+    border-spacing: 0;
+    width:96rem;
+}
+.tabledata
+{
+    word-wrap: break-word;
+    line-height: 4;
+    padding: 10px;
+    font-size: 13px;
+    text-transform: capitalize;
+    text-align: right;
+}
+.tabledata:first-child
+{
+    text-align: left;
+}
+.tabledata:nth-child(4)
+{
+    justify-content: right;
+}
+.tableheaderdiv
+{
+    width : 100%;
+}
+
+.fieldContainer{
+
+    display: flex;
+    padding: 7px 9px 7px;
+    border: solid 1px #ccc;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    border-radius: 1.5px;
+    position:relative;
+    max-width: 14rem;
+    height: 3rem;
+    padding-right:0;
+    margin-right: 0;
+}
+.fieldContainer:nth-child(1)
+{
+    justify-content: flex-end;
+}
+
+.fieldContainer:hover{
+    border: solid 1.5px #a9a8a8;
+    border-top: solid 2px #a9a8a8;
+    
+}
+.fieldContainer .label{
+    font-size: 1.6rem;
+    color: var(--secondary-text);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    padding-bottom: 0.2rem;
+    left: 10px;
+    bottom: 0;
+    transform: translateY(20%);
+    z-index: 1;
+    padding-left: 0.4rem;
+}
+.fieldContainer .field{
+    display: absolute;
+    border: none;
+    outline: 0;
+    font-size: 1.4rem;
+    color: var( --primary-tex);
+    background-color: transparent;
+    z-index: 2;
+    padding-left: 0.4rem;
+    text-indent: 2rem;
+    overflow: hidden;
+}
+.fieldContainer:has(.field:focus) {
+    border: solid 2px var( --bright-blue);
+    border-left: solid 3.5px var( --bright-blue);
+    transition: 1ms;
+}
+.fieldContainer .faceValuefield{
+    display: absolute;
+    border: none;
+    outline: 0;
+    font-size: 1.6rem;
+    color: var( --primary-tex);
+    background-color: transparent;
+    z-index: 2;
+    padding-left: 0.4rem;
+    text-indent: 2rem;
+    overflow: hidden;
+    color: transparent;
+    height:100%;
+    width: 100%;
+    text-align: right;
+}
+.fieldContainer:has(.faceValuefield:focus) {
+    border: solid 2px var( --bright-blue);
+    border-left: solid 3.5px var( --bright-blue);
+    transition: 1ms;
+
+}
+.btn {
+    align-items: center;
+    display: flex;
+    width: 60%; 
+    margin-left:77rem;
+    transform: translateY(-120%);
+  }
+  .btn .button {
+    width:30%;
+    background-color: var(--orange);
+    color: white;
+    font-size: 1.4rem;
+  
+    padding: 1.4rem 0;
+    border: none;
+    font-weight: 600;
+    border-radius: 3px;
+    max-height: 5rem;
+    border-radius: 5px;
+  }
+  .btn .button p {
+    text-align: center;
+  }
+  .btn .button:hover {
+    background-color: var(--hoverButton);
+    cursor: pointer;
+  }
+
+  .totalvallabel
+  {
+    margin-left: 48rem;
+    font-size: 1.6rem;
+    padding-right: 1rem;
+    margin-top:2rem;
+  }
+  .totalvaluediv
+  {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+  }
+
+  .totalvaluediv .fieldContainer
+  {
+    width:100%;
+    flex:4;
+    /* text-indent: 2rem; */
+    /* max-width: 22rem; */
+  }
+  .totalvaluediv .fieldContainer .label
+  {
+    top:0;
+    transform: translateY(20%);
+  }
+.registrationHeader
+{
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    border-bottom: solid 1px var(--border-color);
+}
+.faceValuetext
+{
+    position: absolute;
+    top:0;
+    font-size: 1.6rem;
+    max-width: 12rem;
+    transform: translateY(-15%);
+    margin-right: 0.2rem;
+    text-overflow:ellipsis;
+}
+.regContainer
+{
+    display: flex;
+    flex-direction: row;
+    width:94rem;
+    margin-bottom: 1rem;
+}
+.regSummary
+{
+    width:calc(100% - 62rem);
+    background-color: var(--primary-background);
+}
+.regSummaryBody
+{
+    font-size: 2rem;
+}
+.regSummaryHeader
+{
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+.regSummarytext
+{
+    margin-top: 6rem;
+    margin-left: 3rem;
+}

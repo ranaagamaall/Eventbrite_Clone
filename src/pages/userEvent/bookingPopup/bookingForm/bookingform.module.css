@@ -1,0 +1,216 @@
+
+.main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+.form
+{
+    margin:auto;
+}
+.mainheader h1
+{
+    color: var(--primary-text);
+    font-size: 2rem;
+    font-weight: 400;
+}
+.mainheader
+{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    border-bottom: #ccc solid 1px;
+}
+.Namecontainer
+{
+    display:flex;
+    flex-direction: row;
+    gap:1rem;
+    width:100%;
+    justify-content: space-between;
+}
+.Field{
+    display: block;
+    border: none;
+    outline: 0;
+    font-size: 1.4rem;
+    color: var( --primary-tex);
+    background-color: transparent;
+    z-index: 2;
+    padding-left: 0.4rem;
+    width:fit-content;
+}
+
+.NameField label{
+    font-size: 1.6rem;
+    color: var(--secondary-text);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 0.2rem;
+    position: relative;
+    top: 10px;
+    display: block;
+    transition: 0.2s;
+    z-index: 1;
+    width:27rem;
+    padding-left: 0.4rem;
+}
+.NameField
+{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 7px 9px 7px;
+    border: solid 1px #ccc;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    border-radius: 1.5px;
+    height: 3.3rem;
+}
+
+.boxContainer span{
+    font-size: 1rem;
+    margin-left: 1rem;
+    color: var(--errorText);
+}
+
+.contactInfo
+{
+    margin-top: 3rem;
+    width:80%;
+}
+.contactInfo h2
+{
+    margin:1rem;
+    margin-left:0;
+}
+
+.NameField:has(.Field:focus) {
+    border: solid 2px var( --bright-blue);
+    border-left: solid 3.5px var( --bright-blue);
+    transition: 1ms;
+}
+
+.NameField:has(.Field:not(:placeholder-shown)) label{
+    top: 0;
+    font-size: 1.2rem;
+}
+
+.NameField:has(.Field:focus) label{
+    color: var( --bright-blue);
+    top: 0;
+    font-size: 1.2rem;
+}
+
+.boxContainer:has(span) .NameField{
+    border: solid 1px #db6d7c;
+    border-bottom: solid 2px #db6d7c;
+    transition: 1ms;
+}
+.boxContainer:has(span) .NameField label{
+    color: var(--errorText);
+    top: 0px;
+    font-size: 1.2rem;
+}
+
+.registerfooter {
+    padding: 1.6rem 0;
+    margin: 1.6rem auto;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    width: 79%;
+    color: #6f7287;
+  }
+  
+  .retisterfooter div{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    text-align: center;
+  }
+  .logo
+{
+  width: 4rem;
+  filter: grayscale(100%);
+}
+.registercontainer{
+    width: 100%;
+    min-height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    border-top: #ccc solid 1px;
+  }
+  
+  .btn {
+    /* width: 25%; */
+    /* margin: auto; */
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: black; */
+    display: flex;
+    /* position: relative; */
+    margin:0 auto;
+    width: 77.5%;
+  }
+  .btn .button {
+    width:30%;
+    background-color: var(--orange);
+    color: white;
+    font-size: 1.4rem;
+  
+    padding: 1.4rem 0;
+    border: none;
+    font-weight: 600;
+    border-radius: 3px;
+    max-height: 5rem;
+    border-radius: 5px;
+  }
+  .btn .button p {
+    text-align: center;
+  }
+  .btn .button:hover {
+    background-color: var(--hoverButton);
+    cursor: pointer;
+  }
+  .checkboxContainer
+  {
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap:1rem;
+  }
+  .checkbox{
+    font-size: 1.37rem;
+    color:var(--content-text);
+    gap:1rem;
+    display: flex;
+align-items: center;
+  }
+  .checkbox label{
+    cursor:pointer;
+   padding-left: 1rem;
+  }
+  .checkbox input[type="checkbox"]{
+    cursor:pointer;
+    padding-left: 1rem;
+    width: 2.5rem;
+    height:2.5rem;
+    transition: 3s;
+  }
+  .emailContainer
+  {
+    margin-bottom: 4rem;
+  }
+  .Namecontainer .boxContainer
+  {
+    width:48%;
+  }

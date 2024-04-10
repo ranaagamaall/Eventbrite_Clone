@@ -1,0 +1,283 @@
+.container {
+  margin-top: 6rem;
+}
+.ticketcontainer{
+ 
+    width: 100%;
+   cursor: pointer;
+}
+.ticketinfo {
+  width: calc(100% - 10rem);
+  padding-left: 6rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgb(223, 218, 218);
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 254, 254);
+}
+.nameanddatecontainer {
+  width: 80%;
+}
+.enddatecontainer {
+  display: flex;
+}
+.nameanddate {
+  font-size: 1.6rem;
+  color: #4b4d63;
+  letter-spacing: 0.25px;
+  font-weight: 600;
+  padding-left: 2rem;
+}
+.enddate {
+  font-size: 1.4rem;
+  color: #6f7287;
+  font-weight: 400;
+}
+.capacityandtypecontainer {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+.ticketinfo .capacityandtypecontainer {
+  padding-top: 2.8rem;
+}
+.icon {
+  min-width: 0.6rem;
+  max-height: 0.6rem;
+  margin-right: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: #bcbec5;
+}
+.iconended {
+  min-width: 0.6rem;
+  max-height: 0.6rem;
+  margin-right: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: red;
+}
+.iconactive {
+  min-width: 0.6rem;
+  max-height: 0.6rem;
+  margin-right: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: green;
+}
+.capacity {
+  font-size: 1.5rem;
+  color: #6f7287;
+}
+.type {
+  font-size: 1.5rem;
+  color: #6f7287;
+}
+.iconbar {
+  position: relative;
+  right: 4rem;
+  top: 2.7rem;
+  fill: #dbdae3;
+  max-width: 2.2rem;
+  max-height: 2rem;
+}
+.Eventcapacitycontainer {
+  width: 100%;
+  border-bottom: 1px solid rgb(223, 218, 218);
+  background-color: rgb(255, 254, 254);
+}
+.capacitycontainer {
+  width: 76%;
+  display: flex;
+  color: #4b4d63;
+}
+.capacityinfo {
+  width: 92%;
+  margin-left: auto;
+  display: flex;
+  font-size: 1.5rem;
+
+  padding-top: 2.2rem;
+
+  padding-bottom: 2rem;
+}
+.Eventcapacitycontainer .capacityandtypecontainer {
+  width: 24%;
+  margin: auto;
+}
+.buttoncontainer button {
+  color: #3659e3;
+  outline: none;
+  background-color: white;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+.buttoncontainer button:hover {
+  cursor: pointer;
+  background-color: #f5f1f1;
+}
+.loading {
+  margin-top: 20rem;
+  display: flex;
+  justify-content: center;
+}
+
+.headercontainer p {
+  font-size: 1.8rem;
+
+  font-weight: 600;
+  color: #39364f;
+}
+.headercontainer {
+  margin: auto;
+  display: flex;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  max-height: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(235, 233, 233);
+}
+.forminfo {
+  width: 100%;
+  height: calc(100% - 5rem);
+  border-bottom: 1px solid rgb(235, 233, 233);
+
+  overflow-y: scroll;
+}
+.form {
+  height: calc(100% - 7.5rem);
+}
+
+.boxContainer {
+  width: 90%;
+  margin: auto;
+}
+
+.fieldContainer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 7px 9px 7px;
+  padding-left: 18px;
+  border: solid 1px #ccc;
+  margin-top: 2.5rem;
+  margin-left: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  border-radius: 1.5px;
+}
+
+.fieldContainer:hover {
+  border: solid 1.5px #a9a8a8;
+}
+
+.fieldContainer .label {
+  font-size: 1.6rem;
+  color: var(--secondary-text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 0.2rem;
+  position: relative;
+  top: 10px;
+  display: block;
+  transition: 0.2s;
+  z-index: 1;
+}
+
+.field {
+  border: none;
+  outline: 0;
+  font-size: 1.4rem;
+  color: var(--primary-tex);
+  background-color: transparent;
+  z-index: 2;
+}
+
+.fieldContainer:has(.field:focus) {
+  border: solid 2px var(--bright-blue);
+  border-left: solid 3.5px var(--bright-blue);
+  transition: 1ms;
+}
+
+.fieldContainer:has(.field) .label {
+  top: 0;
+  font-size: 1.2rem;
+}
+.leavecheckoutbuttons {
+  width: 80%;
+  height: 6.5rem;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  column-gap: 0.5rem;
+}
+
+.stayleavebtn {
+  width: 45%;
+  margin: auto;
+}
+
+.stayleavebtn button {
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 1.2rem 0;
+
+  font-weight: 600;
+  border-radius: 3px;
+}
+.stayleavebtn button p {
+  text-align: center;
+}
+.stayleavebtn button:hover {
+  cursor: pointer;
+}
+
+.staybutton {
+  color: var(--primary-text);
+  border: 2px solid var(--faded-grey);
+  background: none;
+}
+
+.leavebutton {
+  background-color: var(--orange);
+  color: white;
+  border: none;
+}
+.boxContainer:has(span) .fieldContainer {
+  border: solid 1px #db6d7c;
+  border-bottom: solid 2px #db6d7c;
+  transition: 1ms;
+}
+
+.boxContainer:has(span) .fieldContainer .label {
+  color: var(--errorText);
+  top: 0px;
+  font-size: 1.2rem;
+}
+
+.boxContainer span {
+  font-size: 1.4rem;
+  padding-left: 0.8rem;
+  color: var(--errorText);
+}
+.capacityinfop {
+  width: 75%;
+  margin-left: 2.6rem;
+  margin-top: 2rem;
+
+  font-size: 1.4rem;
+  color: #0c0a18;
+  line-height: 22px;
+}
+.iconewaiting {
+  min-width: 0.6rem;
+  max-height: 0.6rem;
+  margin-right: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: yellow;
+}

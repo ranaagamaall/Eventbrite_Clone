@@ -1,0 +1,74 @@
+.container {
+  /* display: flex;
+  flex-direction: column;
+  row-gap: 3rem; */
+  margin-left: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.mainsectionheader {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--content-text);
+  margin-bottom: 3rem;
+}
+
+.salestable table {
+  width: 100%;
+  text-align: start;
+}
+
+table {
+  border-bottom: 1px solid #eeedf2;
+  margin-bottom: 1.5rem;
+}
+
+td {
+  color: var(--primary-text);
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+
+.sold {
+  color: var(--bright-blue);
+}
+
+.hyperlink {
+  color: var(--bright-blue);
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
+}
+
+.hyperlink:hover {
+  text-decoration: underline;
+}
+
+.emptypromos {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  margin: 3rem auto;
+}
+
+
+.emptyticketsicon svg {
+  width: 12rem;
+  height: 12rem;
+}
+
+.mainsectionheaderno {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #6f7287;
+  margin: 3rem auto;
+  text-align: center;
+}

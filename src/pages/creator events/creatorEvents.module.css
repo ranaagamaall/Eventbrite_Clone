@@ -1,0 +1,222 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.header h1 {
+  font-size: 6rem;
+  font-family: var(--main-h1);
+  color: var(--content-text);
+  margin-bottom: 2rem;
+  font-weight: 900;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.events {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.eventTableHeader {
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+  background-color: var(--table);
+  border-radius: 0.5rem;
+}
+
+.eventTableHeader li:first-child {
+  padding-left: 3rem;
+}
+
+.eventTableHeader li {
+  list-style: none;
+  font-size: 1.3rem;
+  font-family: var(--secondary-text);
+  color: var(--moretext);
+  font-weight: 600;
+  padding-block: 2rem;
+  text-align: left;
+}
+
+.export {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.8rem;
+  justify-content: flex-start;
+  color: var(--bright-blue);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.exportDisabled {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.8rem;
+  justify-content: flex-start;
+  color: grey;
+}
+
+.btn {
+  width: 100%;
+  margin: 3rem auto;
+  justify-content: space-between;
+  display: flex;
+}
+.btn .button {
+  width: 15rem;
+  background-color: var(--orange);
+  color: white;
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+  border: none;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  justify-content: right;
+  height: 5rem;
+}
+.btn .button p {
+  text-align: center;
+}
+.btn .button:hover {
+  background-color: var(--hoverButton);
+  cursor: pointer;
+}
+
+.searchField {
+  display: flex;
+  justify-self: baseline;
+  width: 25rem;
+  border: 0.2rem solid var(--border-color);
+  border-radius: 0.2rem;
+  height: 5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+.search {
+  display: flex;
+  justify-self: baseline;
+  width: 25rem;
+  height: 5rem;
+  border: none;
+  background-color: white;
+}
+
+.search::placeholder {
+  color: var(--secondary-text);
+  font-size: 1.3rem;
+  padding-left: 2rem;
+}
+
+.unusedBtn,
+.unusedBtnCalendar {
+  display: flex;
+  width: 5rem;
+  background-color: var(--test-blue);
+  justify-content: left;
+  align-items: center;
+  border-radius: 2rem !important;
+  padding: 0.2rem 1.5rem;
+  height: 3rem;
+  gap: 0.5rem;
+}
+
+.unusedBtn p,
+.unusedBtnCalendar p {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+
+.unusedBtnCalendar {
+  border: 0.2rem solid var(--border-color);
+  background-color: transparent;
+}
+
+.unusedBtnCalendar p {
+  color: var(--moretext);
+}
+
+.btnsList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.unusedselect {
+  background-color: var(--test-blue);
+  border-radius: 2rem !important;
+  height: 3.5rem !important;
+  border-color: blue;
+}
+
+.unusedselect div {
+  color: white;
+}
+
+.unusedselect svg {
+  color: white;
+}
+
+.emptypromos {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  margin: 3rem auto;
+}
+
+.emptyticketsicon {
+  border-radius: 100%;
+  background-color: var(--primary-background);
+}
+
+.emptyticketsicon svg {
+  width: 12rem;
+  height: 12rem;
+}
+
+.mainsectionheader {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #6f7287;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+  .unusedBtnCalendar {
+    display: none;
+  }
+
+  .unusedBtn
+  {
+    display: none;
+  }
+
+  .searchField
+  {
+    display: none;
+  }
+}

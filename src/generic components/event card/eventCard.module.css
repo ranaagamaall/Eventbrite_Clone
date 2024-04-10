@@ -1,0 +1,98 @@
+.card{
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin:1.6rem;
+
+    max-width: 28rem;
+
+}
+
+.card:hover{
+    -webkit-box-shadow: 0 16px 64px -16px rgb(46 55 77 / 24%);
+    box-shadow: 0 16px 64px -16px rgb(46 55 77 / 24%);
+}
+
+.cardImage{
+    width: 100%;
+    min-height: 13rem;
+    max-height: 14rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 3rem;
+}
+
+.cardImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cardContent{
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.cardContent h3{
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.cardContent .time{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--orange);
+    padding: 1.5rem 0;
+}
+
+.cardContent .location p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 0.5rem 0;
+    color: var(--secondary-text);
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.cardContent .company{
+    padding: 0.5rem 0;
+    margin-bottom: 2rem;
+}
+.cardContent .company p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 0.2rem 0;
+}
+
+.imgSkeleton{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    margin: auto;
+    margin-block: 5rem;
+}
+
+.txtSkeleton{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+    .card{
+        width: 45rem;
+        max-width: 50rem;
+    }
+}

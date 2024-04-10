@@ -1,0 +1,27 @@
+.eventdetailscontainer
+{
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    width: 120rem;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .eventdetailscontainer
+    {
+        margin:0 3.2rem;
+        width: calc(100% - 6.4rem);
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    /* .eventdetailscontainer
+    {
+        margin:0 !important;
+        width: 100%;
+        flex-direction: column;
+    } */
+
+  }

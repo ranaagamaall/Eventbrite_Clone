@@ -1,0 +1,234 @@
+.logoContainer {
+  width: 8rem;
+  padding-left: 3rem;
+  padding-top: 2rem;
+  display: flex;
+}
+
+.logoContainer img {
+  width: 100%;
+  justify-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--secondary-background);
+  border-bottom:1px solid var(--border-color);
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.routes {
+  display: flex;
+}
+
+.routes > ul {
+  display: flex;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.navItem {
+  color: var(--primary-text);
+  font-family: var(--main-h1);
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: 0.05rem;
+  padding-block: 2.5rem;
+  padding-inline: 2rem;
+  text-overflow: ellipsis;
+  text-decoration: "none";
+  margin-block: auto;
+  position: relative;
+}
+
+.blue {
+  color: var(--bright-blue);
+}
+
+.blue .wrapper svg {
+  fill: var(--bright-blue);
+}
+
+a {
+  color: unset;
+}
+
+.dots{
+  color: var(--primary-text);
+  width: 2rem !important;
+  height: 2rem !important;
+}
+
+.wrapper .arrow {
+  fill: #c2c2cc;
+  stroke: #c2c2cc;
+  stroke-width: 1px;
+  position: relative;
+  /* top: .4rem; */
+  width: 2rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.wrapper svg {
+  fill: var(--primary-text);
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.wrapper > div {
+  display: flex;
+  place-items: center;
+  gap: 1.3rem;
+}
+
+.navItem:hover {
+  background-color: var(--primary-background);
+}
+.navItem > ol {
+  display: none;
+}
+
+.navItem:hover > ol {
+  display: unset;
+}
+
+.dropDown:hover {
+  display: unset;
+}
+
+.navSubItem:hover {
+  background-color: var(--primary-background);
+  color: var(--primary-text);
+}
+
+.dropDown {
+  right: 0;
+  position: absolute;
+  width: 25rem;
+  top: 100%;
+  background-color: var(--secondary-background);
+  color: #a1a1ac;
+  z-index: 2;
+}
+
+.dropDown > li {
+  padding: 1.5rem;
+}
+
+.navcollapse {
+  cursor: pointer;
+}
+
+
+/* Creator */
+
+.initials{
+  color: red;
+}
+
+.navSubItem svg{
+  fill: var(--primary-text);
+  width: 2.8rem;
+  height: 2.8rem;
+  position: relative;
+  top: 1rem;
+  margin-right: 1rem;
+}
+
+.dark{
+  color:var(--primary-text) !important;
+}
+
+.name{
+  font-weight: 900;
+  margin: 0;
+}
+
+.name>span{
+  color: var(--secondary-background);
+  background-color: var(--bright-blue);
+  padding-block: .7rem;
+  padding-inline: .7rem;
+  border-radius: 100%;
+  font-size: .9rem;
+}
+
+.initials{
+  background-color: var(--bright-blue);
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.wrapperCreator{
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  background-color: var(--primary-background);
+  padding: .5rem;
+  border-radius: 2rem;
+}
+
+.wrapperCreator svg{
+  fill: var(--primary-text) !important;
+  stroke: var(--primary-text) !important;
+}
+
+.navItemCreator{
+  padding-block: 1rem !important;
+  padding-inline: 2rem;
+  justify-items: center;
+}
+
+.navItemCreator:hover{
+  background-color: white !important;
+}
+.navItemCreator:hover > .wrapperCreator{
+  background-color: rgb(235, 235, 239);
+}
+
+.activeLink{
+  cursor: pointer;
+}
+
+.iconContainer{
+  display: none;
+}
+
+@media screen and (max-width: 790px) {
+  .iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    justify-self: center;
+    align-self: center;
+    padding: 0.7rem;
+    border-radius: 50%;
+  }
+  .iconContainer:hover {
+    cursor: pointer;
+    background-color: var(--primary-background);
+  }
+
+  .iconContainer .icon{
+    width: 100%;
+    height: 100%;
+    color: var(--secondary-text);
+  }
+}

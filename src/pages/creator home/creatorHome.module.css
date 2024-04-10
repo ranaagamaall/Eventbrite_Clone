@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.events{
+    color: var(--bright-blue);
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-left: 30rem;
+    margin-top: 2rem;
+}
+
+.events>svg{
+    transform: rotate(90deg);
+    fill: var(--bright-blue);
+    stroke: var(--bright-blue);
+    stroke-width: 1px;
+    width: 2rem;
+    height: 2rem;
+    margin-right: .5rem;
+}
+
+.events:hover{
+    cursor: pointer;
+}
+.modalicon {
+    width: 4rem;
+    height: 4rem;
+    margin: auto;
+    align-items: center;
+    color: var(--content-text);
+  }

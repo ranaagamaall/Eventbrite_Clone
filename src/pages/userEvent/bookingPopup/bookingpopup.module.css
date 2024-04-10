@@ -1,0 +1,326 @@
+.bookingpopscontainer {
+  width: 36rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  border: 2px solid var( --border-color);
+  border-radius: 8px;
+  position: sticky;
+  top: 5rem;
+}
+.btn .button {
+  width: 90%;
+  background-color: var(--orange);
+  color: white;
+  font-size: 1.4rem;
+  padding: 1.7rem 0;
+  border: none;
+  font-weight: 600;
+  border-radius: 3px;
+  /* margin-top: 1.8rem; */
+  margin: 1.8rem auto;
+  max-height: 5rem;
+}
+.btn .button p {
+  text-align: center;
+}
+.btn .button:hover {
+  background-color: var(--hoverButton);
+  cursor: pointer;
+}
+
+.bookingmodal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-text);
+}
+.bookingbox {
+  width: 95%;
+  height: 95%;
+  max-width: 108rem;
+  max-height: 72rem;
+  background-color: var(--primary-background);
+  border: none;
+  position: relative;
+  display: flex;
+  
+}
+
+.bookingmodalclose {
+  position: absolute !important;
+  right: 8px;
+  top: 8px;
+  background-color: rgba(248,247,250,.65) !important;
+  width: 4rem;
+  height: 4rem;
+  z-index: 1000;
+}
+
+.bookingmodalclose:hover {
+
+  background-color: rgba(248,247,250,0.9) !important;
+
+}
+
+.bookingcontainer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.ticketsformcontainer {
+  width: calc(100% - 36rem);
+  border-right: 2px solid var( --border-color);
+}
+
+.summarycontainer, .openSummaryContainer{
+  width: 36rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardImage{
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 3rem;
+}
+
+.cardImage img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.emptycart
+{
+  margin: auto;
+
+}
+
+.emptycart svg
+{ 
+  width: 4.8rem;
+  fill: #dbdae3;
+
+}
+
+.summary{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.4rem;
+  width: 84%;
+}
+
+.summary hr{
+  width: 100%;
+  height: 1px;
+  background-color: rgb(226, 225, 230);
+  border: 0;
+  
+}
+
+.summaryheader{
+  font-weight: 600;
+  font-size: 1.5rem ;
+  color: var(--footer)
+
+}
+
+.summarytickets{
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.4rem;
+}
+
+.ticketsummary
+{
+  display: flex;
+  justify-content: space-between;
+  color : var(--primary-text);
+  /* column-gap: 3.2rem; */
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+}
+
+.ticketcount
+{
+width: 60%;
+display: flex;
+}
+
+.ticketcount svg
+{
+  width:1.5rem;
+  fill:var(--primary-text);
+}
+
+.leavecheckout {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.6rem;
+  margin: auto;
+  
+}
+.leavecheckoutheader {
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--moretext);
+  line-height: 2rem;
+}
+
+.leavecheckoutheader h1 {
+  text-align: center;
+  margin: 1.6rem auto;
+  color: var(--primary-text);
+  padding-bottom: 0.8rem;
+  line-height: 3rem;
+}
+
+.leavecheckoutbuttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1.6rem;
+}
+
+.stayleavebtn {
+  width: 50%;
+  margin: auto;
+}
+
+.stayleavebtn button {
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 1.7rem 0;
+
+  font-weight: 600;
+  border-radius: 3px;
+  margin-top: 1.8rem;
+}
+.stayleavebtn button p {
+  text-align: center;
+}
+.stayleavebtn button:hover {
+  cursor: pointer;
+}
+
+.staybutton {
+  color: var(--primary-text);
+  border: 2px solid var(--faded-grey);
+  background: none;
+}
+
+.leavebutton {
+  background-color: var(--orange);
+  color: white;
+  border: none;
+}
+
+.modalicon{
+  width:5rem;
+  height:5rem;
+  margin: auto;
+  align-items: center;
+  color:var(--content-text)
+}
+
+@media screen and (max-width: 660px) {
+  .bookingbox {
+    width: 100%;
+    height: 100%;
+
+    max-height: max-content;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .openSummaryContainer {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 85%;
+    top:100px;
+    background-color: rgba(248,247,250) !important;
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
+  }
+  .summarycontainer {
+    display: none;
+  }
+
+  .ticketsformcontainer {
+    width: 100%;
+  }
+
+  .leavecheckout {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .bookingpopscontainer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    box-shadow: 0 -1px 24px rgba(40, 44, 53, 0.1),
+      0 -2px 8px rgba(40, 44, 53, 0.1);
+  }
+
+  .btn {
+    border: 0;
+    border-radius: 0;
+    /* box-shadow: 0 -1px 24px rgba(40,44,53,.1), 0 -2px 8px rgba(40,44,53,.1); */
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-4-15 12:9:22
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-top
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+

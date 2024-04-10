@@ -1,0 +1,107 @@
+.component{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+
+}
+
+.title{
+    font-size: 3.5rem;
+    color: var(--primary-text);
+    margin-block: 1.5rem;
+    font-weight: 800;
+}
+
+.arrow{
+    color: var(--bright-blue);
+    font-size: 2.6rem;
+}
+
+.default{
+    font-size: 3rem;
+    color: var(--faded-grey);
+    font-weight: 800;
+    padding-bottom: .3rem;
+    padding-right: 2rem;
+
+    outline: none;
+    border: none;
+    border-bottom: solid #bbbac4b9 2px;
+}
+
+
+
+.default:focus{
+    outline: none;
+    border: none;
+    border-bottom: solid #bbbac4b9 2px;
+}
+
+.default::placeholder {
+    color: var(--faded-grey);
+}
+
+.default:not(:placeholder-shown) {
+    outline: none;
+    border: none;
+    border-bottom: solid #bbbac4b9 2px;
+    color: var(--bright-blue);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+.dropContainer{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.dropList{
+    position: absolute;
+    top: 100%;
+    width: 110%;
+    left: -2%;
+    background-color: var(--secondary-background);
+    color: var(--primary-text);
+    font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-top: 1rem;
+}
+
+.dropList>li{
+    display: flex;
+    align-items: center;
+    padding: 2.7rem;
+    gap: 1.5rem;
+}
+
+.dropList>li>svg{
+    fill: var(--bright-blue);
+    width: 2.5rem;
+}
+
+.dropList>li:hover{
+    background-color: var(--primary-background);
+    cursor: pointer;
+}
+
+.city{
+    font-size: 3rem;
+    color: var(--bright-blue);
+    border-bottom: solid #bbbac4b9 2px;
+    font-weight: 800;
+    padding-bottom: .3rem;
+    padding-right: 3rem;
+}
+
+@media  screen and (max-width:650px) {
+    .component{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

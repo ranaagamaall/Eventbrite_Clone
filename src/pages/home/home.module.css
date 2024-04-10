@@ -1,0 +1,13 @@
+.title{
+    margin-top: 10rem;
+    color: var(--orange);
+}
+.container{
+    width:100%;
+}
+.containerbox
+{
+    width:85%;
+    margin: auto;
+}
+

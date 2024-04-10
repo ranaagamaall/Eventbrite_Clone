@@ -1,0 +1,266 @@
+.container {
+  padding-inline: 18rem;
+  padding-block: 8rem;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.header {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--content-text);
+}
+
+.cards {
+  display: flex;
+  width: 50rem;
+  gap: 5rem;
+}
+.cardsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.export {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.8rem;
+  justify-content: flex-end;
+  color: var(--bright-blue);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.exportDisabled {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.8rem;
+  justify-content: flex-end;
+  color: grey;
+}
+
+.tableHeader {
+  background-color: var(--primary-background);
+  margin: 20rem;
+}
+
+.attendeetable {
+  overflow-x: scroll;
+  width: 100%;
+  margin-block: 3rem;
+}
+
+.attendeetable::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.attendeetable {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.attendeetable table {
+  text-align: start;
+  border-bottom: 1px solid #eeedf2;
+  margin-bottom: 1.5rem;
+
+  column-gap: 5rem;
+}
+
+.tableItslef > thead {
+  white-space: nowrap;
+}
+
+.tableItslef td {
+  color: var(--primary-text);
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+  padding: 2rem 1rem;
+  min-width: 5rem;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.tableItslef th {
+  color: var(--primary-text);
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+  padding: 2rem 1rem;
+  min-width: 5rem;
+  text-align: left;
+}
+
+.icons {
+  margin-top: auto;
+  display: flex;
+  gap: 1rem;
+}
+.icons svg {
+  width: 3rem;
+  height: 3rem;
+  fill: var(--primary-text);
+}
+
+.icons > span:nth-child(2) {
+  transform: rotate(180deg);
+}
+
+.icons svg:hover {
+  background-color: var(--primary-background);
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.disable > svg {
+  fill: var(--faded-grey);
+}
+
+.disable > svg:hover {
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.emptypromos {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  margin: 3rem auto;
+}
+
+.emptyticketsicon svg {
+  width: 12rem;
+  height: 12rem;
+}
+
+.mainsectionheaderno {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #6f7287;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.emptyticketsicon {
+  border-radius: 100%;
+  background-color: var(--primary-background);
+}
+
+.btn {
+  width: 100%;
+  margin: 3rem auto;
+  justify-content: space-between;
+  display: flex;
+}
+
+.btnsList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  width: 65%;
+}
+
+.btnsList2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  width: 35%;
+}
+
+.searchField {
+  display: flex;
+  justify-self: baseline;
+  width: 100%;
+  border: 0.2rem solid var(--border-color);
+  border-radius: 0.2rem;
+  height: 5rem;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 0 1rem;
+}
+.search {
+  display: flex;
+  justify-self: baseline;
+  width: 25rem;
+  height: 5rem;
+  border: none;
+  background-color: white;
+}
+
+.search::placeholder {
+  color: var(--secondary-text);
+  font-size: 1.3rem;
+  padding-left: 2rem;
+}
+
+hr {
+  width: 100%;
+  border-top: 1px solid #eeedf2;
+  margin: 3rem 0 !important;
+}
+
+.hyperlink {
+  color: var(--bright-blue);
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  /* justify-content: end; */
+  margin: 2rem 0;
+}
+
+.hyperlink:hover {
+  text-decoration: underline;
+}
+
+.box {
+  background-color: #ebeffd;
+  border: 2px solid #3659e3;
+  width: 100%;
+  border-radius: 5px;
+  margin: 3rem 0;
+}
+
+.innerbox {
+  padding: 2rem;
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.boxicon {
+  border-radius: 100%;
+  background-color: var(--bright-blue);
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxicon svg {
+  width: 2rem;
+  height: 2rem;
+  fill: white;
+}
+
+.boxdesc {
+  font-size: 1.4rem;
+  color: var(--primary-text);
+  width: calc(100% - 18rem);
+}
+
+@media screen and (max-width: 790px) {
+  .container {
+    padding-inline: 4rem;
+  }
+}

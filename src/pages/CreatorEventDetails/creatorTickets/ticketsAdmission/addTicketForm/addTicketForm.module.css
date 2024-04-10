@@ -1,0 +1,377 @@
+.btn {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+.btn .button {
+  min-width: 15%;
+  background-color: var(--orange);
+  color: white;
+  font-size: 1.3rem;
+  border: none;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-top: 2rem;
+  margin-left: auto;
+  height: 4.5rem;
+  padding: 0 30px 1px;
+  text-align: center;
+}
+.btn .button p {
+  text-align: center;
+}
+.btn .button:hover {
+  background-color: var(--hoverButton);
+  cursor: pointer;
+}
+
+.headercontainer p {
+  font-size: 1.8rem;
+
+  font-weight: 600;
+  color: #39364f;
+}
+.headercontainer a {
+  font-size: 1.5rem;
+  color: #3659e3;
+  height: 15px;
+  cursor: pointer;
+}
+.headercontainer a:hover {
+  border-bottom: 1px solid #3659e3;
+}
+.headercontainer {
+  margin: auto;
+  display: flex;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  max-height: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(235, 233, 233);
+}
+.forminfo {
+  width: 100%;
+  height: calc(100% - 6rem);
+
+  overflow-y: scroll;
+}
+.form {
+  height: calc(100% - 6rem);
+}
+
+.typeofform {
+  margin-top: 3rem !important;
+
+  width: 89%;
+  display: flex;
+
+  margin: auto;
+  gap: 1.6rem;
+}
+.typeofform .item {
+  font-size: 1.3rem;
+  width: calc((100%-3.3rem) / 3);
+  border: 1px solid #dbdae3;
+  border-radius: 5px;
+  padding: 4.5% 0%;
+  cursor: pointer;
+  text-align: center;
+}
+.clickeditem {
+  font-size: 1.3rem;
+  padding: 4.5% 0%;
+  width: calc((100%-3.3rem) / 3);
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  background-color: rgba(54, 89, 227, 0.1);
+  border: 1px solid #3659e3;
+  color: #3659e3;
+}
+.boxContainer {
+  width: 90%;
+  margin: auto;
+}
+
+.fieldContainer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 7px 9px 7px;
+  padding-left: 18px;
+  border: solid 1px #ccc;
+  margin-top: 2.5rem;
+  margin-left: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  border-radius: 1.5px;
+}
+
+.fieldContainer:hover {
+  border: solid 1.5px #a9a8a8;
+}
+
+.fieldContainer .label {
+  font-size: 1.6rem;
+  color: var(--secondary-text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 0.2rem;
+  position: relative;
+  top: 10px;
+  display: block;
+  transition: 0.2s;
+  z-index: 1;
+}
+
+.field {
+  border: none;
+  outline: 0;
+  font-size: 1.4rem;
+  color: var(--primary-tex);
+  background-color: transparent;
+  z-index: 2;
+}
+
+.fieldContainer:has(.field:focus) {
+  border: solid 2px var(--bright-blue);
+  border-left: solid 3.5px var(--bright-blue);
+  transition: 1ms;
+}
+
+.fieldContainer:has(.field) .label {
+  top: 0;
+  font-size: 1.2rem;
+}
+.dollar {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-right: 100px;
+  position: relative;
+
+  bottom: 8px;
+  padding-right: 8px;
+  color: #a9a8b3;
+}
+.fielddisable {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 7px 9px 7px;
+  padding-left: 18px;
+  border: solid 1px #ccc;
+  margin-top: 2.5rem;
+  margin-left: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  border-radius: 1.5px;
+  background-color: #f8f7fa;
+}
+.container2 {
+  width: 100%;
+  display: flex;
+  gap: 0px;
+  flex-direction: row;
+}
+.container2 .field {
+  width: 90%;
+
+  position: relative;
+  right: 95px;
+}
+.containerstart {
+  width: 88%;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.containerstart .boxContainer {
+  width: calc((100%-10px) / 2);
+}
+.containerstart .datacontainer {
+  width: calc((100%-10px) / 2);
+  height: 100%;
+  font-size: 2rem;
+}
+.containerstart .boxContainer .fieldContainer {
+  width: 82%;
+}
+.class {
+  background-color: red;
+  height: 200px;
+  padding: 100px;
+  display: flex;
+}
+.advancedsettings {
+  display: flex;
+  justify-content: space-between;
+
+  width: 90%;
+  margin: 2rem auto;
+  position: relative;
+  left: 10px;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #cdcdcf;
+}
+.ticketperorder {
+  width: 85%;
+  margin: auto;
+  font-size: 1.4rem;
+  position: relative;
+  top: 2rem;
+}
+.advancedp {
+  font-size: 1.4rem;
+  color: #737374;
+  font-weight: 600;
+}
+.containercheckbutton {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  margin-left: 3rem;
+}
+.checkbuttonp {
+  font-size: 1.4rem;
+  padding-top: 0.7rem;
+}
+.leavecheckoutbuttons {
+  width: 80%;
+  height: 6.5rem;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  column-gap: 0.5rem;
+  margin-top: 3rem;
+}
+
+.stayleavebtn {
+  width: 45%;
+  margin: auto;
+}
+
+.stayleavebtn button {
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 1.2rem 0;
+
+  font-weight: 600;
+  border-radius: 3px;
+}
+.stayleavebtn button p {
+  text-align: center;
+}
+.stayleavebtn button:hover {
+  cursor: pointer;
+}
+
+.staybutton {
+  color: var(--primary-text);
+  border: 2px solid var(--faded-grey);
+  background: none;
+}
+
+.leavebutton {
+  background-color: var(--orange);
+  color: white;
+  border: none;
+}
+.boxContainer:has(span) .fieldContainer {
+  border: solid 1px #db6d7c;
+  border-bottom: solid 2px #db6d7c;
+  transition: 1ms;
+}
+
+.boxContainer:has(span) .fieldContainer .label {
+  color: var(--errorText);
+  top: 0px;
+  font-size: 1.2rem;
+}
+
+.boxContainer span {
+  font-size: 1.4rem;
+  padding-left: 0.8rem;
+  color: var(--errorText);
+}
+
+.limitcontainer:has(span) > .containerstart2 > .boxContainer > .fieldContainer {
+  border: solid 1px #db6d7c;
+  border-bottom: solid 2px #db6d7c;
+  transition: 1ms;
+}
+
+.salesstart {
+  font-size: 1.4rem;
+  color: var(--secondary-text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  position: relative;
+  top: 2.9rem;
+  left: 1rem;
+  transition: 0.2s;
+  z-index: 1;
+}
+.salesend {
+  font-size: 1.4rem;
+  color: var(--secondary-text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  position: relative;
+  top: 2.8rem;
+  left: 1rem;
+  transition: 0.2s;
+  z-index: 1;
+}
+.loading {
+  margin-top: 20rem;
+  display: flex;
+  justify-content: center;
+}
+
+.emptypromos {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  margin: 0 auto;
+}
+
+.mainsectionheader {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: var(--content-text);
+  margin: 1.4rem 0 3rem;
+  text-align: center;
+}
+
+.emptypromosumm {
+  color: var(--primary-text);
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.emptyticketsicon {
+  border-radius: 100%;
+  background-color: var(--primary-background);
+}
+
+.emptyticketsicon svg {
+  width: 10rem;
+  height: 10rem;
+}
+
+.modalicon {
+  width: 4rem;
+  height: 4rem;
+  margin: auto;
+  align-items: center;
+  color: var(--content-text);
+}

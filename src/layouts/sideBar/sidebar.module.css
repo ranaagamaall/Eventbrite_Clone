@@ -1,0 +1,152 @@
+.sideBar{
+    background-color: var(--primary-background);
+    border-right:1px solid var(--border-color);
+    min-width: 5.8rem;
+    max-width: 5.9rem;
+    height: 100vh;
+
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 3rem auto 3rem;
+    position: relative;
+}
+
+.logoContainer .logo{
+    width: 100%;
+    height: 100%;
+}
+
+.iconsList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.iconContainer:nth-child(8){
+    margin-top: 15rem;
+}
+
+.iconContainer{
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.iconContainer .activeLink{
+    background-color: var(--bright-blue);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.iconContainer .icon{
+   width: 2.5rem;
+   height: 2.5rem;
+   color: var(--secondary-text);
+}
+
+.iconContainer .activeLink .icon{
+    width: 2.7rem;
+    height: 2.7rem;
+    color: var(--primary-background);
+    transition: all 1ms ease-in-out;
+}
+
+.iconContainer:hover .normalLink{
+    background-color: var(--secondary-background);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    transition: all 0.5ms ease-in-out;
+}
+
+.iconContainer:hover .normalLink .icon{
+    color: var(--bright-blue);
+    transition: all 1ms ease-in-out;
+}
+
+.iconContainer p{
+    display: none;
+}
+
+.iconContainer:hover p{
+    display: inline-block;
+    position: absolute;
+    left: 5rem;
+    top: 0;
+    border-radius: 0.5rem;
+
+    width: fit-content;
+    background-color: var(--secondary-background);
+    padding: 0.8rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    font-size: 1.4rem;
+    color: var(--primary-text);
+    text-align: justify;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.smallScreenSideBar{
+    display: none;
+}
+
+@media screen and (max-width: 790px) {
+    .sideBar{
+        display: none;
+    }
+
+    .smallScreenSideBar{
+        display: flex;
+        position: absolute;
+        min-width: 80%;
+        top: 8rem;
+        background-color: var(--secondary-background);
+        padding: 2rem;
+        margin: auto;
+        z-index: 1;
+        transition: all 0.5s ease-in-out;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    }
+
+    .logoContainer{
+        display: none;
+    }
+    .iconsList{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:5rem;
+        margin: auto;
+    }
+    .iconContainer:nth-child(8){
+        margin-top: 0;
+    }
+
+    .iconContainer .icon{
+        width: 3rem;
+        height: 3rem;
+        color: var(--secondary-text);
+    }
+
+    .iconContainer:hover p{
+        display: none;
+    }
+}
+    
